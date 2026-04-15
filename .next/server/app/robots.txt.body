@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Host: https://calm-chronicle.vercel.app
+Sitemap: https://calm-chronicle.vercel.app/sitemap.xml
