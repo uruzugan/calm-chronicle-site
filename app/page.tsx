@@ -14,36 +14,36 @@ export const metadata: Metadata = {
 
 const reasons = [
   {
-    icon: "🤖",
-    title: "AIで高品質・低コストを実現",
+    icon: "🎯",
+    title: "一人ひとりの想いを大切に",
     description:
-      "AIを活用することで、従来の制作会社と同等のクオリティを、月額19,800円〜という価格でご提供します。",
+      "クライアントのビジネスゴールと想いを丁寧にヒアリングし、最適なHP制作を実現します。",
   },
   {
     icon: "🌱",
-    title: "初期費用0円・月額制",
+    title: "穏やかなパートナーシップ",
     description:
-      "まとまった費用は不要です。月単位で始め・止めることができるため、リスクを最小限に抑えられます。",
+      "単なるベンダーではなく、あなたのビジネスの成長を一緒に支えるパートナーとして、長期的な関係を築きます。",
   },
   {
-    icon: "💬",
-    title: "LINEで気軽に相談できる",
+    icon: "🤖",
+    title: "AIの力で効率的に",
     description:
-      "専門用語を使わず、わかりやすく丁寧にご対応します。ご相談から公開まで、LINEで完結します。",
+      "AIを活用することで、制作効率を高め、スピーディーで高品質なHP制作を実現します。",
   },
 ];
 
 const steps = [
-  { number: "1", title: "LINEで無料相談", description: "ご要望・目的をヒアリングします" },
-  { number: "2", title: "プランのご提案", description: "最適なプランをご提案します" },
-  { number: "3", title: "制作・確認", description: "AIを活用して迅速に制作します" },
-  { number: "4", title: "公開・運用サポート", description: "公開後も継続的にサポートします" },
+  { number: "1", title: "ヒアリング", description: "ビジネス目標と課題を詳しくお伺いします" },
+  { number: "2", title: "提案・設計", description: "最適なソリューションを提案します" },
+  { number: "3", title: "実装", description: "高品質な実装を行います" },
+  { number: "4", title: "運用サポート", description: "プランに応じたサポート" },
 ];
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "CalmChronicle株式会社",
+  name: "カームクロニクル株式会社",
   description: "AIを活用した月額制ホームページ制作サービス",
   url: "https://calm-chronicle.vercel.app",
   address: {
@@ -86,62 +86,47 @@ export default function HomePage() {
 
       <main style={{ paddingTop: "80px" }}>
         {/* Hero */}
-        <section
-          className="py-24 md:py-40"
-          style={{ backgroundColor: "#F5F1EA" }}
-          aria-label="ヒーローセクション"
-        >
+        <section className="py-20 md:py-32 bg-white relative overflow-hidden">
           <div className="container max-w-4xl">
-            <p className="text-sm font-medium mb-4" style={{ color: "#C8A96A" }}>
-              AIを活用した月額制ホームページ制作
-            </p>
             <h1
               className="text-4xl md:text-6xl font-bold leading-tight mb-6"
               style={{ color: "#1F1F1F", fontFamily: "var(--font-playfair), serif" }}
             >
-              はじめての<br />
-              ホームページを、<br />
-              <span style={{ color: "#C8A96A" }}>やさしく。</span>
+              AIのチカラで、
+              <br />
+              物語をかたちに。
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-xl">
-              CalmChronicleは、個人事業主・小規模企業向けの月額制ホームページ制作サービスです。
-              初期費用0円・月額19,800円〜で、AIを活用した高品質なWebサイトをご提供します。
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
+              一人ひとりのアイデアをAIで実現し、
+              <br />
+              未来へ繫がる発信を支えます。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://lin.ee/K5FUv9n"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 text-white font-semibold rounded-lg text-center transition-all hover:opacity-90"
-                style={{ backgroundColor: "#C8A96A" }}
-              >
-                LINEで無料相談を始める
-              </a>
-              <Link
-                href="/lp"
-                className="inline-block px-8 py-4 font-semibold rounded-lg text-center transition-all hover:opacity-70 border-2"
-                style={{ borderColor: "#1F1F1F", color: "#1F1F1F" }}
-              >
-                プランを見る
-              </Link>
-            </div>
+            <a
+              href="https://lin.ee/K5FUv9n"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 text-white font-semibold rounded-lg transition-all hover:opacity-90"
+              style={{ backgroundColor: "#C8A96A" }}
+            >
+              LINEで相談する
+            </a>
           </div>
         </section>
 
         {/* Reasons */}
-        <section className="py-20 md:py-32 bg-white" aria-label="選ばれる理由">
+        <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-4xl">
             <h2
-              className="text-3xl font-bold text-center mb-16"
-              style={{ color: "#1F1F1F" }}
+              className="text-4xl font-bold text-center mb-16"
+              style={{ color: "#1F1F1F", fontFamily: "var(--font-playfair), serif" }}
             >
-              CalmChronicleが選ばれる理由
+              選ばれる理由
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {reasons.map((r) => (
                 <div
                   key={r.title}
-                  className="p-8 rounded-lg border text-center"
+                  className="bg-white text-center p-8 rounded-lg border h-full"
                   style={{ borderColor: "#E8E4DC" }}
                 >
                   <div className="text-5xl mb-4">{r.icon}</div>
@@ -156,15 +141,11 @@ export default function HomePage() {
         </section>
 
         {/* Process */}
-        <section
-          className="py-20 md:py-32"
-          style={{ backgroundColor: "#F5F1EA" }}
-          aria-label="制作の流れ"
-        >
+        <section className="py-20 md:py-32 bg-white">
           <div className="container max-w-4xl">
             <h2
-              className="text-3xl font-bold text-center mb-16"
-              style={{ color: "#1F1F1F" }}
+              className="text-4xl font-bold text-center mb-16"
+              style={{ color: "#1F1F1F", fontFamily: "var(--font-playfair), serif" }}
             >
               制作の流れ
             </h2>
@@ -197,7 +178,7 @@ export default function HomePage() {
         </section>
 
         {/* Pricing Preview */}
-        <section className="py-20 md:py-32 bg-white" aria-label="料金プレビュー">
+        <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-3xl text-center">
             <h2
               className="text-3xl font-bold mb-6"
@@ -221,11 +202,7 @@ export default function HomePage() {
         </section>
 
         {/* Blog Preview */}
-        <section
-          className="py-20 md:py-32"
-          style={{ backgroundColor: "#F5F1EA" }}
-          aria-label="ブログ"
-        >
+        <section className="py-20 md:py-32 bg-white">
           <div className="container max-w-4xl">
             <h2
               className="text-3xl font-bold text-center mb-12"
@@ -249,10 +226,7 @@ export default function HomePage() {
         </section>
 
         {/* CTA */}
-        <section
-          className="py-20 md:py-32 bg-white"
-          aria-label="お問い合わせCTA"
-        >
+        <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-3xl text-center">
             <h2
               className="text-3xl font-bold mb-6"
@@ -261,9 +235,9 @@ export default function HomePage() {
               まずは、無料相談から
             </h2>
             <p className="text-gray-600 leading-relaxed mb-8">
-              「どんなホームページが必要か」「費用はどのくらいかかるか」など、
+              あなたのビジネスに合ったプランを、ご提案します。
               <br />
-              どんな些細な疑問でもお気軽にご相談ください。
+              LINE で、気軽にお問い合わせください。
             </p>
             <a
               href="https://lin.ee/K5FUv9n"

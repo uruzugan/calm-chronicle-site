@@ -14,78 +14,50 @@ export const metadata: Metadata = {
 
 const steps = [
   {
-    number: "01",
-    title: "LINEで無料相談",
-    duration: "当日〜翌営業日",
+    number: '01',
+    title: 'LINEで無料相談',
     description:
-      "まずはLINEからお気軽にご相談ください。ビジネスの目的・ターゲット・ご要望をヒアリングします。専門用語を使わず、わかりやすくご説明します。",
-    details: [
-      "どんなホームページが必要か",
-      "ターゲット・目的の確認",
-      "予算・スケジュールの確認",
-    ],
+      'まずは公式LINEからお気軽にご相談ください。ビジネスの目標、現状の課題、ご希望のデザインなどをお聞かせいただきます。',
   },
   {
-    number: "02",
-    title: "プランのご提案・お見積もり",
-    duration: "1〜2営業日",
+    number: '02',
+    title: 'プランのご提案',
     description:
-      "ヒアリング内容をもとに、最適なプランをご提案します。費用・制作内容・スケジュールを明確にお伝えします。",
-    details: [
-      "最適なプランのご提案",
-      "費用・スケジュールの確認",
-      "ご契約・お支払い",
-    ],
+      'ヒアリング内容をもとに、最適なプランをご提案します。BASIC・STANDARD・PROの中からご予算とニーズに合ったプランをご選択いただきます。',
   },
   {
-    number: "03",
-    title: "ヒアリングシートの記入・素材のご提供",
-    duration: "お客様のペースで",
+    number: '03',
+    title: '契約・決済',
     description:
-      "ヒアリングシートにビジネス情報・掲載内容をご記入いただきます。ロゴ・写真などの素材があればご提供ください。素材がない場合はフリー素材を活用します。",
-    details: [
-      "ヒアリングシートへの記入",
-      "ロゴ・写真などの素材提供（任意）",
-      "掲載テキストの確認",
-    ],
+      'ご納得いただけましたら、Stripeを通じて安全にお支払いいただきます。1ヶ月単位の月額制なので、気軽に始められます。',
   },
   {
-    number: "04",
-    title: "制作・確認",
-    duration: "3〜10営業日",
+    number: '04',
+    title: 'ヒアリング・設計',
     description:
-      "AIを活用して迅速に制作します。完成したデザインをご確認いただき、修正があればお知らせください。",
-    details: [
-      "デザイン・コーディング",
-      "お客様による確認",
-      "修正・調整",
-    ],
+      'サイトの構成、デザインの方向性、掃載コンテンツについて詳しくヒアリングします。お客様のビジネスの「物語」を丁寧に引き出します。',
   },
   {
-    number: "05",
-    title: "公開",
-    duration: "確認後、即日〜翌営業日",
+    number: '05',
+    title: 'HP制作',
     description:
-      "お客様の確認が取れたら、ホームページを公開します。ドメイン・サーバーの設定もサポートします。",
-    details: [
-      "ドメイン・サーバー設定",
-      "公開作業",
-      "動作確認",
-    ],
+      'AIの力を活用しながら、高品質なホームページを制作します。デザインから実装まで、一貫して対応します。',
   },
   {
-    number: "06",
-    title: "継続的な更新・運用サポート",
-    duration: "月額プランに含む",
+    number: '06',
+    title: '確認・修正',
     description:
-      "公開後も、プランに応じた更新・修正サポートを提供します。新しいページの追加・コンテンツの更新など、ビジネスの成長に合わせてホームページを育てていきます。",
-    details: [
-      "定期的なコンテンツ更新",
-      "デザイン・機能の改善",
-      "SEO対策の継続",
-    ],
+      '完成したサイトをご確認いただき、ご要望に応じて修正を行います。プランの修正回数内で対応します。',
+  },
+  {
+    number: '07',
+    title: '公開・運用開始',
+    description:
+      'サイトを公開し、運用を開始します。公開後も月次の更新・改善サポートを継続して提供します。',
   },
 ];
+
+
 
 export default function ProcessPage() {
   return (
@@ -133,26 +105,10 @@ export default function ProcessPage() {
                     )}
                   </div>
                   <div className="pb-8 flex-1">
-                    <div className="flex items-center gap-3 mb-2 flex-wrap">
-                      <h2 className="text-xl font-bold" style={{ color: "#1F1F1F" }}>
-                        {step.title}
-                      </h2>
-                      <span
-                        className="text-xs px-2 py-1 rounded"
-                        style={{ backgroundColor: "#F5F1EA", color: "#C8A96A" }}
-                      >
-                        {step.duration}
-                      </span>
-                    </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">{step.description}</p>
-                    <ul className="space-y-1">
-                      {step.details.map((d) => (
-                        <li key={d} className="flex items-start gap-2 text-sm text-gray-500">
-                          <span style={{ color: "#C8A96A" }}>✓</span>
-                          <span>{d}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <h2 className="text-xl font-bold mb-2" style={{ color: "#1F1F1F" }}>
+                      {step.title}
+                    </h2>
+                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}

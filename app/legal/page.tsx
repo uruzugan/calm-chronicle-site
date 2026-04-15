@@ -11,15 +11,17 @@ export const metadata: Metadata = {
 };
 
 const items = [
-  { label: "販売業者", value: "CalmChronicle株式会社" },
-  { label: "代表責任者", value: "代表取締役" },
-  { label: "所在地", value: "〒141-0031 東京都品川区西五反田一丁目26番2号 五反田サンハイツ911" },
-  { label: "お問い合わせ", value: "公式LINE（https://lin.ee/K5FUv9n）" },
-  { label: "販売価格", value: "各プランページをご参照ください（税抜表示）" },
-  { label: "支払方法", value: "クレジットカード決済" },
-  { label: "支払時期", value: "毎月月初にご請求します" },
-  { label: "サービス提供時期", value: "ご契約後、最短3〜5営業日で公開します" },
-  { label: "返品・キャンセル", value: "月単位でのご契約です。月末までにご連絡いただければ翌月以降の解約が可能です。" },
+  { label: '事業者名', value: 'カームクロニクル株式会社（Calm Chronicle）' },
+  { label: '代表者名', value: '福永穏紀' },
+  { label: '所在地', value: '〒141-0031 東京都品川区西五反田一丁目26番2号 五反田サンハイツ911' },
+  { label: 'メールアドレス', value: 'calmchronicle.inc@gmail.com' },
+  { label: 'お問い合わせ方法', value: '公式LINE（https://lin.ee/K5FUv9n）またはメールにてお問い合わせください。' },
+  { label: '販売価格', value: 'BASICプラン：¥19,800/月（税抜）、STANDARDプラン：¥39,800/月（税抜）、PROプラン：¥69,800/月（税抜）' },
+  { label: '支払方法', value: 'クレジットカード決済（Stripe）' },
+  { label: '支払時期', value: '毎月の契約更新日に自動決済されます。' },
+  { label: 'サービス提供時期', value: '契約成立後、2、4週間以内にサービスを提供します。' },
+  { label: 'キャンセル・返品について', value: '月額制のため、解約は翔月以降に適用されます。当月分の返金は原則承っておりません。ただし、サービス提供前のキャンセルについては、個別にご相談ください。' },
+  { label: '動作環境', value: '最新バージョンのChrome、Firefox、Safari、Edgeに対応しています。' },
 ];
 
 export default function LegalPage() {

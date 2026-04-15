@@ -23,13 +23,14 @@ export default function AboutPage() {
           <div className="container max-w-3xl">
             <h1
               className="text-4xl md:text-5xl font-bold mb-6"
-              style={{ color: "#1F1F1F" }}
+              style={{ color: "#1F1F1F", fontFamily: "var(--font-playfair), serif" }}
             >
               会社について
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              CalmChronicleは、「はじめてのホームページを、やさしく。」をコンセプトに、
-              個人事業主・小規模企業向けのホームページ制作サービスを提供しています。
+              Calm Chronicleは、一人ひとりの想いを大切にし、
+              <br />
+              AIの力で穏やかに支える会社です。
             </p>
           </div>
         </section>
@@ -38,24 +39,16 @@ export default function AboutPage() {
         <section className="py-20 md:py-32 bg-white">
           <div className="container max-w-3xl">
             <h2 className="text-3xl font-bold mb-8" style={{ color: "#1F1F1F" }}>
-              私たちのミッション
+              ミッション
             </h2>
-            <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p>
-                「ホームページを持ちたいけど、費用が高い」「何から始めればいいかわからない」——
-                そんな悩みを持つ個人事業主・小規模企業の方々のために、CalmChronicleは生まれました。
-              </p>
-              <p>
-                AIを活用することで、従来の制作会社では難しかった「高品質・低コスト・スピード」の
-                三つを同時に実現。初期費用0円・月額19,800円〜という価格で、プロのホームページを
-                持てる環境を作りました。
-              </p>
-              <p>
-                私たちは、単なるホームページ制作会社ではなく、お客様のビジネスの成長を
-                一緒に支えるパートナーでありたいと考えています。
-                「穏やかに、そして確実に」——それが私たちのスタイルです。
-              </p>
-            </div>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: "#C8A96A" }}>私たちの理念</h3>
+            <blockquote className="text-xl text-gray-700 leading-relaxed mb-8 italic border-l-4 pl-6" style={{ borderColor: "#C8A96A" }}>
+              “AIのチカラで一人ひとりの物語をかたちにし、
+              穏やかな未来を創造する。”
+            </blockquote>
+            <p className="text-gray-700 leading-relaxed">
+              ホームページは企業の顔です。私たちはAIの力を活用し、一人ひとりのビジネスの想いをかたちにし、穏やかで信頼できるWebの世界を一緒に創造していきます。
+            </p>
           </div>
         </section>
 
@@ -67,11 +60,13 @@ export default function AboutPage() {
             </h2>
             <div className="bg-white rounded-lg border overflow-hidden" style={{ borderColor: "#E8E4DC" }}>
               {[
-                { label: "会社名", value: "CalmChronicle株式会社" },
-                { label: "所在地", value: "〒141-0031 東京都品川区西五反田一丁目26番2号 五反田サンハイツ911" },
-                { label: "資本金", value: "100万円" },
-                { label: "事業内容", value: "ホームページ制作・Web制作・AI活用支援・SNS運用支援" },
-                { label: "お問い合わせ", value: "公式LINE（https://lin.ee/K5FUv9n）" },
+                { label: '会社名', value: 'カームクロニクル株式会社（Calm Chronicle）' },
+                { label: '創業日', value: '2026年3月20日' },
+                { label: '代表者', value: '代表取締役　福永穏紀' },
+                { label: '所在地', value: '〒141-0031 東京都品川区西五反田一丁目26番2号 五反田サンハイツ911' },
+                { label: '資本金', value: '100万円' },
+                { label: 'メールアドレス', value: 'calmchronicle.inc@gmail.com' },
+                { label: '公式LINE', value: 'https://lin.ee/K5FUv9n' },
               ].map((row, i) => (
                 <div
                   key={row.label}
@@ -93,8 +88,30 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Services */}
+        {/* Values */}
         <section className="py-20 md:py-32 bg-white">
+          <div className="container max-w-3xl">
+            <h2 className="text-3xl font-bold mb-8" style={{ color: "#1F1F1F" }}>
+              私たちの価値観
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { icon: '🧠', title: '知的', desc: '戦略的思考に基づき、データと経験を活かした提案をします。' },
+                { icon: '🤝', title: '信頼', desc: '透明性を大切にし、クライアントとの信頼関係を最優先にします。' },
+                { icon: '⚡', title: '実行', desc: '理想を形にするため、常に改善していきます。' },
+              ].map((v) => (
+                <div key={v.title} className="p-6 rounded-lg border text-center" style={{ borderColor: '#E8E4DC' }}>
+                  <div className="text-4xl mb-3">{v.icon}</div>
+                  <h3 className="font-bold mb-2" style={{ color: '#1F1F1F' }}>{v.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{v.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Services */}
+        <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-3xl">
             <h2 className="text-3xl font-bold mb-8" style={{ color: "#1F1F1F" }}>
               提供サービス

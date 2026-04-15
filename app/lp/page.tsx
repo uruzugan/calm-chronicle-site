@@ -120,21 +120,23 @@ export default function LPPage() {
         {/* Hero */}
         <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-3xl">
-            <p className="text-sm font-medium mb-3" style={{ color: "#C8A96A" }}>
-              月額制ホームページ制作
+            <p className="text-sm font-semibold mb-4" style={{ color: "#C8A96A" }}>
+              Calm AI — 月額制 HP 制作サービス
             </p>
             <h1
-              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-              style={{ color: "#1F1F1F" }}
+              className="text-4xl md:text-5xl font-bold leading-tight mb-6"
+              style={{ color: "#1F1F1F", fontFamily: "var(--font-playfair), serif" }}
             >
-              初期費用0円。月額19,800円〜で、
+              初期費用0円。
               <br />
-              プロのホームページを持てます。
+              月額¥１９，８００〜で、
+              <br />
+              プロのHPを。
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              CalmChronicleの月額制プランは、初期費用なしで始められ、
-              制作から更新・サポートまですべて込みです。
-              まとまった費用をかけずに、プロのWebサイトを持ちたい方に最適です。
+              AIを活用した高品質なホームページ制作・更新サポート。
+              <br />
+              個人事業主・小規模企業向けの月額制サービスです。
             </p>
             <a
               href="https://lin.ee/K5FUv9n"
@@ -148,26 +150,47 @@ export default function LPPage() {
           </div>
         </section>
 
-        {/* Why Monthly */}
+        {/* Problems */}
         <section className="py-20 md:py-32 bg-white">
           <div className="container max-w-3xl">
-            <h2 className="text-3xl font-bold mb-8" style={{ color: "#1F1F1F" }}>
-              なぜ月額制なのか
+            <h2 className="text-3xl font-bold mb-12" style={{ color: "#1F1F1F" }}>
+              こんなお悩みはありませんか？
             </h2>
-            <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p>
-                従来のホームページ制作は、初期費用として30〜100万円以上かかることが珍しくありませんでした。
-                個人事業主や小規模企業にとって、この初期投資は大きなハードルです。
-              </p>
-              <p>
-                CalmChronicleの月額制モデルは、この問題を解決するために生まれました。
-                初期費用0円で始められ、月額料金の中に制作・更新・サポートがすべて含まれています。
-                事業の成長に合わせてプランを変更することも可能です。
-              </p>
-              <p>
-                また、ホームページは作って終わりではなく、継続的な更新・改善が集客効果を高めます。
-                月額制なら、この継続的な改善コストも予算に組み込みやすくなります。
-              </p>
+            <div className="space-y-4">
+              {[
+                'HP制作会社に依頼したが、初期費用が高くて踏み出せない',
+                'HP制作会社に依頼したが、更新のたびに費用がかかる',
+                'SEO対策をしたいが、何から始めればいいかわからない',
+                '自分でHP制作ツールを使ったが、クオリティが低い',
+              ].map((problem, i) => (
+                <div key={i} className="bg-white p-5 rounded-lg border flex items-start gap-3" style={{ borderColor: '#E8E4DC' }}>
+                  <span className="text-xl">😔</span>
+                  <p className="text-gray-700">{problem}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Solutions */}
+        <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
+          <div className="container max-w-3xl">
+            <h2 className="text-3xl font-bold mb-4" style={{ color: "#1F1F1F" }}>
+              Calm AI が解決します
+            </h2>
+            <p className="text-gray-600 mb-12">AIを活用した高品質なHP制作・更新サポートで、あなたのビジネスを支えます。</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { title: '✓ 初期費用0円', desc: '月額制なので、初期費用は一切かかりません。1ヶ月単位で始められます。' },
+                { title: '✓ 月額制で更新し放題', desc: 'プランに応じた回数の修正が込み。追加費用なしで更新できます。' },
+                { title: '✓ SEO対策も、込みで', desc: 'STANDARD・PRO プランなら、SEO対策も込み。検索からの流入を増やすサポートをします。' },
+                { title: '✓ LINEで、気軽に相談', desc: 'LINE公式アカウントで、気軽に相談できます。わからないことは、何でも聞いてください。' },
+              ].map((s) => (
+                <div key={s.title} className="bg-white p-6 rounded-lg border" style={{ borderColor: '#E8E4DC' }}>
+                  <h3 className="font-bold mb-2" style={{ color: '#C8A96A' }}>{s.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -305,9 +328,9 @@ export default function LPPage() {
               まずは、無料相談から
             </h2>
             <p className="text-gray-600 leading-relaxed mb-8">
-              どのプランが合っているか迷っている方も、お気軽にご相談ください。
+              あなたのビジネスに合ったプランを、ご提案します。
               <br />
-              ご要望をお聞きした上で、最適なプランをご提案します。
+              LINE で、気軽にお問い合わせください。
             </p>
             <a
               href="https://lin.ee/K5FUv9n"

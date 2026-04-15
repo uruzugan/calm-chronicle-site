@@ -13,76 +13,40 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    category: "費用・プランについて",
-    items: [
-      {
-        q: "初期費用はかかりますか？",
-        a: "初期費用は0円です。月額料金のみでご利用いただけます。",
-      },
-      {
-        q: "月額料金には何が含まれますか？",
-        a: "月額料金には、ホームページの制作・更新・修正・チャットサポートが含まれます。プランによって修正回数やページ数が異なります。",
-      },
-      {
-        q: "途中でプランを変更できますか？",
-        a: "はい、月単位でプランを変更できます。ご要望の際はLINEからご連絡ください。",
-      },
-      {
-        q: "修正回数を超えた場合はどうなりますか？",
-        a: "修正回数を超えた場合は、1回あたり5,500円（税込）の追加費用が発生します。",
-      },
-    ],
+    question: 'どのプランを選べばいいですか？',
+    answer: 'BASICプランは小規模サイト向け、STANDARDは中規模、PROは大規模サイト向けです。まずはLINEで無料相談してください。',
   },
   {
-    category: "制作・納期について",
-    items: [
-      {
-        q: "制作期間はどのくらいかかりますか？",
-        a: "BASICプランで最短3〜5営業日、STANDARDプランで1〜2週間が目安です。ご要望の内容によって変動します。",
-      },
-      {
-        q: "制作に必要なものを教えてください。",
-        a: "ヒアリングシートへの記入と、ロゴ・写真などの素材をご提供いただければ、あとはすべてお任せいただけます。素材がない場合は、フリー素材を活用して制作します。",
-      },
-      {
-        q: "スマートフォン対応（レスポンシブ）はしてもらえますか？",
-        a: "はい、すべてのプランでスマートフォン対応（レスポンシブデザイン）を標準で実施しています。",
-      },
-      {
-        q: "ドメインやサーバーの手配も必要ですか？",
-        a: "ドメイン・サーバーの手配も承ります。別途費用が発生しますが、手間なく始められます。",
-      },
-    ],
+    question: '制作期間はどのくらいですか？',
+    answer: '通常2、4週間で制作完了です。ただし、ヒアリング内容や修正回数により変わります。',
   },
   {
-    category: "AI活用について",
-    items: [
-      {
-        q: "AIで作ったホームページの品質は大丈夫ですか？",
-        a: "AIはあくまで制作効率を高めるための道具です。AIが生成したものをプロが必ずレビュー・調整するため、品質は担保されています。",
-      },
-      {
-        q: "自分でAIを使う必要がありますか？",
-        a: "いいえ、お客様がAIを操作する必要は一切ありません。AIを活用するのはCalmChronicle側であり、お客様はLINEでやり取りするだけです。",
-      },
-    ],
+    question: '更新はどのくらいの頻度でできますか？',
+    answer: 'BASICは月１回、STANDARDは月４回、PROは月８回の修正に対応しています。',
   },
   {
-    category: "解約・その他",
-    items: [
-      {
-        q: "いつでも解約できますか？",
-        a: "月単位でのご契約です。翌月以降の解約は、月末までにLINEからご連絡いただければ対応します。",
-      },
-      {
-        q: "解約後、ホームページはどうなりますか？",
-        a: "解約後はホームページの更新・サポートが終了します。ドメイン・サーバーの継続については別途ご相談ください。",
-      },
-      {
-        q: "対象年齢はありますか？",
-        a: "18歳以上の方を対象としています。未成年の方は保護者の同意が必要です。",
-      },
-    ],
+    question: 'SEO対策は含まれていますか？',
+    answer: 'STANDARDとPROプランに含まれています。BASICは別途ご相談ください。',
+  },
+  {
+    question: '解約はいつでもできますか？',
+    answer: 'はい、1ヶ月単位で契約できるため、いつでも解約可能です。',
+  },
+  {
+    question: '対象となる業種はありますか？',
+    answer: '業種は問いません。個人事業主・フリーランス・小規模企業など、幅広くご対応しています。',
+  },
+  {
+    question: 'HP制作はどこで行いますか？',
+    answer: 'すべてオンラインで完結します。全国どこからでもご利用いただけます。',
+  },
+  {
+    question: '支払い方法は何ですか？',
+    answer: 'クレジットカード決済（Stripe）に対応しています。',
+  },
+  {
+    question: 'AIを使ったHP制作とはどういう意味ですか？',
+    answer: '弊社スタッフがAIツールを活用してHP制作を行います。お客様がAIを直接操作する必要はありません。AIを活用することで、制作スピードと品質の向上を実現しています。',
   },
 ];
 
@@ -91,16 +55,14 @@ export default function FAQPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.flatMap((cat) =>
-      cat.items.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.a,
-        },
-      }))
-    ),
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 
   return (
@@ -131,31 +93,19 @@ export default function FAQPage() {
         {/* FAQ */}
         <section className="py-16 md:py-24">
           <div className="container max-w-3xl">
-            <div className="space-y-12">
-              {faqs.map((cat) => (
-                <div key={cat.category}>
-                  <h2
-                    className="text-xl font-bold mb-6 pb-3 border-b"
-                    style={{ color: "#1F1F1F", borderColor: "#E8E4DC" }}
-                  >
-                    {cat.category}
-                  </h2>
-                  <div className="space-y-4">
-                    {cat.items.map((item) => (
-                      <div
-                        key={item.q}
-                        className="p-6 rounded-lg border"
-                        style={{ borderColor: "#E8E4DC" }}
-                      >
-                        <p className="font-bold mb-3" style={{ color: "#1F1F1F" }}>
-                          Q. {item.q}
-                        </p>
-                        <p className="text-gray-600 leading-relaxed text-sm">
-                          A. {item.a}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
+            <div className="space-y-4">
+              {faqs.map((item) => (
+                <div
+                  key={item.question}
+                  className="p-6 rounded-lg border"
+                  style={{ borderColor: "#E8E4DC" }}
+                >
+                  <p className="font-bold mb-3" style={{ color: "#1F1F1F" }}>
+                    Q. {item.question}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-sm">
+                    A. {item.answer}
+                  </p>
                 </div>
               ))}
             </div>
