@@ -14,7 +14,7 @@ const footerLinks = {
     { label: "ブログ", href: "/blog" },
   ],
   その他: [
-    { label: "プライバシーポリシー", href: "/privacy-policy" },
+    { label: "プライバシーポリシー", href: "/privacy" },
     { label: "特定商取引法に基づく表記", href: "/legal" },
   ],
 };
