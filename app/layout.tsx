@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Noto_Serif_JP, Playfair_Display } from "next/font/google";
+import { Noto_Sans_JP, Noto_Serif_JP, Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -13,6 +13,13 @@ const notoSerifJP = Noto_Serif_JP({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-noto-serif",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -81,7 +88,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${notoSansJP.variable} ${notoSerifJP.variable} ${playfairDisplay.variable}`}
+      className={`${notoSansJP.variable} ${notoSerifJP.variable} ${playfairDisplay.variable} ${dmSans.variable}`}
     >
       <body className="font-sans antialiased bg-white text-charcoal">
         {children}

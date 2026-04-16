@@ -125,11 +125,11 @@ export default function LPPage() {
             </p>
             <h1
               className="text-4xl md:text-5xl font-bold leading-tight mb-6"
-              style={{ color: "#1F1F1F", fontFamily: "var(--font-playfair), serif" }}
+              style={{ color: "#1F1F1F" }}
             >
               初期費用0円。
               <br />
-              月額¥１９，８００〜で、
+              月額<span style={{ fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "-0.02em" }}>￥19,800</span>〜で、
               <br />
               プロのHPを。
             </h1>
