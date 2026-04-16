@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "会社について｜CalmChronicle株式会社",
   description:
-    "CalmChronicle株式会社の会社概要。東京都品川区を拠点とするAI活用ホームページ制作会社。個人事業主・小規模企業向けの月額制Web制作サービスを提供しています。",
+    "CalmChronicle株式会社の会社概要。AIを活用した月額制ホームページ制作会社。個人事業主・小規模企業向けの月額制Web制作サービスを全国対応で提供しています。",
   alternates: {
     canonical: "https://calm-chronicle.vercel.app/about",
   },

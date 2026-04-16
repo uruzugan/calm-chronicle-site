@@ -9,7 +9,6 @@ const footerLinks = {
   サービス: [
     { label: "プランのご説明", href: "/lp" },
     { label: "AI制作について", href: "/ai" },
-    { label: "東京のお客様へ", href: "/tokyo" },
     { label: "よくある質問", href: "/faq" },
     { label: "ブログ", href: "/blog" },
   ],

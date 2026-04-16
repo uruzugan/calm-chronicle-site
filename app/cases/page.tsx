@@ -116,7 +116,7 @@ export default function CasesPage() {
         <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-2xl text-center">
             <h2 className="text-3xl font-bold mb-6" style={{ color: "#1F1F1F" }}>
-              あなたのビジネスにも、同じクオリティを
+              あなたのビジネスにも、確かなクオリティを
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
               業種・規模を問わず、最適なホームページをご提案します。

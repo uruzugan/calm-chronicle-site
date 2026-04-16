@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     template: "%s | CalmChronicle",
   },
   description:
-    "CalmChronicleは、AIを活用した月額制ホームページ制作サービスです。初期費用0円・月額19,800円〜で、個人事業主・小規模企業向けに高品質なWebサイトを制作します。東京都品川区。",
-  keywords: ["ホームページ制作", "月額制", "AI", "Web制作", "個人事業主", "東京"],
+    "CalmChronicleは、AIを活用した月額制ホームページ制作サービスです。初期費用0円・月額19,800円〜で、個人事業主・小規模企業向けに高品質なWebサイトを制作します。全国対応・オンライン完結。",
+  keywords: ["ホームページ制作", "月額制", "AI", "Web制作", "個人事業主", "全国対応"],
   authors: [{ name: "CalmChronicle株式会社" }],
   creator: "CalmChronicle株式会社",
   openGraph: {
