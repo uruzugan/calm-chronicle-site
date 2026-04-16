@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "制作の流れ｜ホームページ制作の手順・スケジュール",
   description:
-    "CalmChronicleのホームページ制作の流れをご説明します。LINEでの無料相談から公開・運用サポートまで、最短3〜5営業日で対応します。",
+    "CalmChronicleのホームページ制作の流れをご説明します。LINEでの無料相談から公開・運用サポートまで、コンテンツの量によって制作期間は異なりますが、ヒアリング後に目安期間をお伝えします。",
   alternates: {
     canonical: "https://calm-chronicle.vercel.app/process",
   },
@@ -76,7 +76,7 @@ export default function ProcessPage() {
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
               LINEでの無料相談から公開・運用サポートまで、すべてオンラインで完結します。
-              最短3〜5営業日での公開も可能です。
+              コンテンツの量によって制作期間は異なります。ヒアリング後に目安期間をお伝えします。
             </p>
           </div>
         </section>
