@@ -182,7 +182,8 @@ export default function LPPage() {
               {[
                 { title: '✓ 初期費用0円', desc: '月額制なので、初期費用は一切かかりません。1ヶ月単位で始められます。' },
                 { title: '✓ 月額制で更新し放題', desc: 'プランに応じた回数の修正が込み。追加費用なしで更新できます。' },
-                { title: '✓ LINEで、気軽に相談', desc: 'LINE公式アカウントで、気軽に相談できます。わからないことは、何でも聞いてください。' },
+                { title: '✓ AIを活用した高品質制作', desc: 'AIを内包した制作プロセスで、短期間・低コストでプロ品質のホームページを届けます。' },
+                { title: '✓ LINEで、気軽に相談', desc: 'LINE公式アカウントで、気軽に相談できます。わからないことは、何でも聴いてください。' },
               ].map((s) => (
                 <div key={s.title} className="bg-white p-6 rounded-lg border" style={{ borderColor: '#E8E4DC' }}>
                   <h3 className="font-bold mb-2" style={{ color: '#C8A96A' }}>{s.title}</h3>
