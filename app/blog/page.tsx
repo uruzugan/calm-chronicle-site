@@ -7,8 +7,8 @@ import { articles } from "@/data/articles";
 export const metadata: Metadata = {
   title: "ブログ｜ホームページ制作・AI活用・Web集客の情報",
   description:
-    "ホームページ制作の費用・方法・SEO対策・AI活用など、個人事業主・小規模企業向けのWeb制作情報を発信しています。",
-  keywords: ["ブログ", "ホームページ制作", "SEO対策", "AI活用", "Web集客"],
+    "ホームページ制作の費用・方法・AI活用など、個人事業主・小規模企業向けのWeb制作情報を発信しています。",
+  keywords: ["ブログ", "ホームページ制作", "AI活用", "Web集客"],
   alternates: {
     canonical: "https://calm-chronicle.vercel.app/blog",
   },

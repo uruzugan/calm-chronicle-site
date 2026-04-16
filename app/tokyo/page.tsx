@@ -71,10 +71,7 @@ export default function TokyoPage() {
                 東京都内のお客様はもちろん、全国どこからでもオンラインでご依頼いただけます。
                 LINEでのやり取りが中心のため、対面での打ち合わせは不要です。
               </p>
-              <p>
-                東京の競合の多い市場でも、SEO対策・デザイン・コンテンツの充実により、
-                検索からの集客を実現します。
-              </p>
+
             </div>
           </div>
         </section>
@@ -117,11 +114,6 @@ export default function TokyoPage() {
             </h2>
             <div className="space-y-6">
               {[
-                {
-                  title: "東京の競合市場でも差別化できるSEO対策",
-                  description:
-                    "東京は競合が多い市場です。地域名＋業種のキーワードでの検索上位表示を目指し、地域からの集客を支援します。",
-                },
                 {
                   title: "オンライン完結でスムーズな制作",
                   description:

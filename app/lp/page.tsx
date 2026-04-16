@@ -25,14 +25,14 @@ const plans = [
     name: "STANDARD",
     price: "¥39,800",
     desc: "少しずつサイトを育てていきたい方向け",
-    features: ["Webサイト：7ページまで", "月4回の修正", "チャットサポート", "SEO対策"],
+    features: ["Webサイト：7ページまで", "月4回の修正", "チャットサポート"],
     highlight: true,
   },
   {
     name: "PRO",
     price: "¥69,800",
     desc: "事業として本格的に成長させたい方向け",
-    features: ["Webサイト：15ページまで", "月8回の修正", "チャットサポート", "SEO対策"],
+    features: ["Webサイト：15ページまで", "月8回の修正", "チャットサポート"],
     highlight: false,
   },
 ];
@@ -160,7 +160,6 @@ export default function LPPage() {
               {[
                 'HP制作会社に依頼したが、初期費用が高くて踏み出せない',
                 'HP制作会社に依頼したが、更新のたびに費用がかかる',
-                'SEO対策をしたいが、何から始めればいいかわからない',
                 '自分でHP制作ツールを使ったが、クオリティが低い',
               ].map((problem, i) => (
                 <div key={i} className="bg-white p-5 rounded-lg border flex items-start gap-3" style={{ borderColor: '#E8E4DC' }}>
@@ -183,7 +182,6 @@ export default function LPPage() {
               {[
                 { title: '✓ 初期費用0円', desc: '月額制なので、初期費用は一切かかりません。1ヶ月単位で始められます。' },
                 { title: '✓ 月額制で更新し放題', desc: 'プランに応じた回数の修正が込み。追加費用なしで更新できます。' },
-                { title: '✓ SEO対策も、込みで', desc: 'STANDARD・PRO プランなら、SEO対策も込み。検索からの流入を増やすサポートをします。' },
                 { title: '✓ LINEで、気軽に相談', desc: 'LINE公式アカウントで、気軽に相談できます。わからないことは、何でも聞いてください。' },
               ].map((s) => (
                 <div key={s.title} className="bg-white p-6 rounded-lg border" style={{ borderColor: '#E8E4DC' }}>
@@ -273,7 +271,6 @@ export default function LPPage() {
                     ["初期費用", "0円", "30〜200万円", "0〜数万円"],
                     ["月額費用", "19,800円〜", "別途更新費用", "1,000〜5,000円"],
                     ["制作期間", "3〜10営業日", "1〜3ヶ月", "自分次第"],
-                    ["SEO対策", "あり", "オプション", "限定的"],
                     ["更新サポート", "月額内に含む", "別途費用", "自分で対応"],
                   ].map(([item, calm, agency, diy]) => (
                     <tr key={item} className="border-t" style={{ borderColor: "#E8E4DC" }}>

@@ -25,10 +25,6 @@ const faqs = [
     answer: 'BASICは月１回、STANDARDは月４回、PROは月８回の修正に対応しています。',
   },
   {
-    question: 'SEO対策は含まれていますか？',
-    answer: 'STANDARDとPROプランに含まれています。BASICは別途ご相談ください。',
-  },
-  {
     question: '解約はいつでもできますか？',
     answer: 'はい、1ヶ月単位で契約できるため、いつでも解約可能です。',
   },
