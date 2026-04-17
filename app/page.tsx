@@ -130,10 +130,10 @@ export default function HomePage() {
                   style={{ borderColor: "#E8E4DC" }}
                 >
                   <div className="text-5xl mb-4">{r.icon}</div>
-                  <h3 className="text-lg font-bold mb-3" style={{ color: "#1F1F1F" }}>
+                  <h3 className="text-lg font-bold mb-3" style={{ color: "#1F1F1F", wordBreak: "keep-all", overflowWrap: "break-word" }}>
                     {r.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{r.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed" style={{ wordBreak: "keep-all", overflowWrap: "break-word", textAlign: "left" }}>{r.description}</p>
                 </div>
               ))}
             </div>
