@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/data/articles";
 
+export const dynamic = 'force-static';
+
 const SITE_URL = "https://calm-chronicle.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
