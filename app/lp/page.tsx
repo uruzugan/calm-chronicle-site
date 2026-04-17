@@ -121,7 +121,7 @@ export default function LPPage() {
         <section className="py-20 md:py-32" style={{ backgroundColor: "#F5F1EA" }}>
           <div className="container max-w-3xl">
             <p className="text-sm font-semibold mb-4" style={{ color: "#C8A96A" }}>
-              Calm AI — 月額制 HP 制作サービス
+              Calm AI — 月額制ホームページ制作サービス
             </p>
             <h1
               className="text-4xl md:text-5xl font-bold leading-tight mb-6"
@@ -131,7 +131,7 @@ export default function LPPage() {
               <br />
               月額<span style={{ fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "-0.02em" }}>￥19,800</span>〜で、
               <br />
-              プロのHPを。
+              プロのホームページを。
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               AIを活用した高品質なホームページ制作・更新サポート。
@@ -158,9 +158,9 @@ export default function LPPage() {
             </h2>
             <div className="space-y-4">
               {[
-                'HP制作会社に依頼したが、初期費用が高くて踏み出せない',
-                'HP制作会社に依頼したが、更新のたびに費用がかかる',
-                '自分でHP制作ツールを使ったが、クオリティが低い',
+                'ホームページ制作会社に依頼したが、初期費用が高くて踏み出せない',
+                'ホームページ制作会社に依頼したが、更新のたびに費用がかかる',
+                '自分でホームページ制作ツールを使ったが、クオリティが低い',
               ].map((problem, i) => (
                 <div key={i} className="bg-white p-5 rounded-lg border flex items-start gap-3" style={{ borderColor: '#E8E4DC' }}>
                   <span className="text-xl">😔</span>
@@ -177,7 +177,7 @@ export default function LPPage() {
             <h2 className="text-3xl font-bold mb-4" style={{ color: "#1F1F1F" }}>
               Calm AI が解決します
             </h2>
-            <p className="text-gray-600 mb-12">AIを活用した高品質なHP制作・更新サポートで、あなたのビジネスを支えます。</p>
+            <p className="text-gray-600 mb-12">AIを活用した高品質なホームページ制作・更新サポートで、あなたのビジネスを支えます。</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: '✓ 初期費用0円', desc: '月額制なので、初期費用は一切かかりません。1ヶ月単位で始められます。' },
@@ -200,9 +200,10 @@ export default function LPPage() {
             <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: "#1F1F1F" }}>
               プラン・料金
             </h2>
-            <p className="text-center text-gray-600 mb-12">
+            <p className="text-center text-gray-600 mb-2">
               すべてのプランで初期費用0円。月単位でのご契約です。
             </p>
+            <p className="text-center text-xs text-gray-400 mb-12">表示価格はすべて税抜です。別途消費税がかかります。</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {plans.map((plan) => (
                 <div
