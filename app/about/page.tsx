@@ -103,7 +103,7 @@ export default function AboutPage() {
                 <div key={v.title} className="p-6 rounded-lg border text-center" style={{ borderColor: '#E8E4DC' }}>
                   <div className="text-4xl mb-3">{v.icon}</div>
                   <h3 className="font-bold mb-2" style={{ color: '#1F1F1F', wordBreak: 'keep-all' }}>{v.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed" style={{ wordBreak: 'keep-all', overflowWrap: 'break-word', textAlign: 'left' }}>{v.desc}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed" style={{ wordBreak: 'keep-all', overflowWrap: 'break-word' }}>{v.desc}</p>
                 </div>
               ))}
             </div>
