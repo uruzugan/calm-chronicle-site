@@ -16,20 +16,17 @@ const reasons = [
   {
     icon: "🎯",
     title: "一人ひとりの想いを\n大切に",
-    description:
-      "ビジネスゴールと想いを丁寧にヒアリングし 最適なHP制作を実現します",
+    description: "想いを丁寧に聞き取り\n最適なHP制作を実現します",
   },
   {
     icon: "🌱",
-    title: "穏やかなパートナーシップ",
-    description:
-      "単なる制作会社ではなく あなたの成長を支えるパートナーとして 長期的な関係を築きます",
+    title: "穏やかな\nパートナーシップ",
+    description: "単なる制作会社ではなく\n長期的な関係を築きます",
   },
   {
     icon: "🤖",
-    title: "AIの力で効率的に",
-    description:
-      "AIを活用し スピーディーで高品質なHPを届けます",
+    title: "AIの力で\n効率的に",
+    description: "AIで制作効率を高め\n高品質なHPを届けます",
   },
 ];
 
@@ -133,7 +130,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-bold mb-3 whitespace-pre-line" style={{ color: "#1F1F1F", wordBreak: "keep-all", overflowWrap: "break-word" }}>
                     {r.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed" style={{ wordBreak: "keep-all", overflowWrap: "break-word" }}>{r.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line" style={{ wordBreak: "keep-all", overflowWrap: "break-word" }}>{r.description}</p>
                 </div>
               ))}
             </div>
