@@ -1,9 +1,16 @@
 import type { MetadataRoute } from "next";
-import { articles } from "@/data/articles";
-
-export const dynamic = 'force-static';
 
 const SITE_URL = "https://calm-chronicle.vercel.app";
+
+const blogSlugs = [
+  "hp-beginner-guide",
+  "hp-low-cost",
+  "hp-fast-delivery",
+  "monthly-plan-pros-cons",
+  "line-official-account-guide",
+  "ai-homepage-quality",
+  "homepage-content-tips",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -20,13 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/ai`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/tokyo`,
+      url: `${SITE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -35,13 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/cases`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${SITE_URL}/process`,
@@ -62,6 +57,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ai`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/tokyo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/privacy`,
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -75,11 +82,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const blogPages: MetadataRoute.Sitemap = articles.map((article) => ({
-    url: `${SITE_URL}/blog/${article.slug}`,
-    lastModified: new Date(article.date.replace(/年|月/g, "-").replace("日", "")),
+  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${SITE_URL}/blog/${slug}`,
+    lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.7,
+    priority: 0.6,
   }));
 
   return [...staticPages, ...blogPages];
