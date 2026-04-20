@@ -96,9 +96,9 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { icon: '🧠', title: '知的', desc: '戦略的思考に基づき、データと経験を活かした提案をします。' },
-                { icon: '🤝', title: '信頼', desc: '透明性を大切にし、クライアントとの信頼関係を最優先にします。' },
-                { icon: '⚡', title: '実行', desc: '理想を形にするため、常に改善していきます。' },
+                { icon: '🧠', title: '知的', desc: '戦略的思考に基づき データと経験を活かした提案をします' },
+                { icon: '🤝', title: '信頼', desc: '透明性を大切にし クライアントとの信頼関係を最優先にします' },
+                { icon: '⚡', title: '実行', desc: '理想を形にするため 常に改善していきます' },
               ].map((v) => (
                 <div key={v.title} className="p-6 rounded-lg border text-center" style={{ borderColor: '#E8E4DC' }}>
                   <div className="text-4xl mb-3">{v.icon}</div>

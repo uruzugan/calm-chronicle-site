@@ -15,21 +15,21 @@ export const metadata: Metadata = {
 const reasons = [
   {
     icon: "🎯",
-    title: "一人ひとりの想いを大切に",
+    title: "一人ひとりの想いを\n大切に",
     description:
-      "クライアントのビジネスゴールと想いを丁寧にヒアリングし、最適なHP制作を実現します。",
+      "クライアントのビジネスゴールと想いを丁寧にヒアリングし 最適なHP制作を実現します",
   },
   {
     icon: "🌱",
     title: "穏やかなパートナーシップ",
     description:
-      "単なるベンダーではなく、あなたのビジネスの成長を一緒に支えるパートナーとして、長期的な関係を築きます。",
+      "単なるベンダーではなく あなたのビジネスの成長を一緒に支えるパートナーとして 長期的な関係を築きます",
   },
   {
     icon: "🤖",
     title: "AIの力で効率的に",
     description:
-      "AIを活用することで、制作効率を高め、スピーディーで高品質なHP制作を実現します。",
+      "AIを活用することで 制作効率を高め スピーディーで高品質なHP制作を実現します",
   },
 ];
 
@@ -130,7 +130,7 @@ export default function HomePage() {
                   style={{ borderColor: "#E8E4DC" }}
                 >
                   <div className="text-5xl mb-4">{r.icon}</div>
-                  <h3 className="text-lg font-bold mb-3" style={{ color: "#1F1F1F", wordBreak: "keep-all", overflowWrap: "break-word" }}>
+                  <h3 className="text-lg font-bold mb-3 whitespace-pre-line" style={{ color: "#1F1F1F", wordBreak: "keep-all", overflowWrap: "break-word" }}>
                     {r.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed" style={{ wordBreak: "keep-all", overflowWrap: "break-word" }}>{r.description}</p>
