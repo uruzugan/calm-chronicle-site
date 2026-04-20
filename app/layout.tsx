@@ -67,6 +67,9 @@ export const metadata: Metadata = {
       "AIを活用した月額制ホームページ制作。初期費用0円・月額19,800円〜。",
     images: ["/og-image.png"],
   },
+  verification: {
+    google: "VZ3XDCeooaNNizoBzZUsQRGN_FO880i2chyE9MAO-Dg",
+  },
   robots: {
     index: true,
     follow: true,
